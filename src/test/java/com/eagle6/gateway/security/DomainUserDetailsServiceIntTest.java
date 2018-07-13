@@ -1,7 +1,6 @@
 package com.eagle6.gateway.security;
 
 import com.eagle6.gateway.GatewayApp;
-import com.eagle6.gateway.domain.User;
 import com.eagle6.gateway.repository.UserRepository;
 
 import org.apache.commons.lang3.RandomStringUtils;

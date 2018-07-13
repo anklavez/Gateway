@@ -1,17 +1,16 @@
 package com.eagle6.gateway.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
-
 import com.eagle6.gateway.domain.User;
 import com.eagle6.gateway.repository.UserRepository;
 import com.eagle6.gateway.security.SecurityUtils;
 import com.eagle6.gateway.service.MailService;
 import com.eagle6.gateway.service.UserService;
+import com.eagle6.gateway.service.dto.PasswordChangeDTO;
 import com.eagle6.gateway.service.dto.UserDTO;
 import com.eagle6.gateway.web.rest.errors.*;
 import com.eagle6.gateway.web.rest.vm.KeyAndPasswordVM;
 import com.eagle6.gateway.web.rest.vm.ManagedUserVM;
-
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import com.eagle6.gateway.service.dto.PasswordChangeDTO;
-import java.util.*;
+import java.util.Optional;
 
 /**
  * REST controller for managing the current user's account.
@@ -128,7 +126,7 @@ public class AccountResource {
             throw new InternalServerErrorException("User could not be found");
         }
         userService.updateUser(userDTO.getFirstName(), userDTO.getLastName(), userDTO.getEmail(),
-            userDTO.getLangKey());
+            userDTO.getLangKey(), userDTO.getImageUrl());
    }
 
     /**

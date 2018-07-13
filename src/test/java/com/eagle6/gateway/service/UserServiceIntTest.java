@@ -2,9 +2,7 @@ package com.eagle6.gateway.service;
 
 import com.eagle6.gateway.GatewayApp;
 import com.eagle6.gateway.config.Constants;
-import com.eagle6.gateway.domain.User;
 import com.eagle6.gateway.repository.UserRepository;
-import com.eagle6.gateway.service.dto.UserDTO;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
@@ -13,8 +11,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

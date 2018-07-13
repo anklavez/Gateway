@@ -2,12 +2,8 @@ package com.eagle6.gateway.web.rest;
 
 import com.eagle6.gateway.GatewayApp;
 import com.eagle6.gateway.domain.Authority;
-import com.eagle6.gateway.domain.User;
 import com.eagle6.gateway.repository.UserRepository;
 import com.eagle6.gateway.security.AuthoritiesConstants;
-import com.eagle6.gateway.service.MailService;
-import com.eagle6.gateway.service.UserService;
-import com.eagle6.gateway.service.dto.UserDTO;
 import com.eagle6.gateway.service.mapper.UserMapper;
 import com.eagle6.gateway.web.rest.errors.ExceptionTranslator;
 import com.eagle6.gateway.web.rest.vm.ManagedUserVM;

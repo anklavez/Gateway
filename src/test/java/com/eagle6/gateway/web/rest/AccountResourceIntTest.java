@@ -2,16 +2,12 @@ package com.eagle6.gateway.web.rest;
 
 import com.eagle6.gateway.config.Constants;
 import com.eagle6.gateway.GatewayApp;
-import com.eagle6.gateway.domain.User;
 import com.eagle6.gateway.repository.UserRepository;
 import com.eagle6.gateway.security.AuthoritiesConstants;
-import com.eagle6.gateway.service.MailService;
-import com.eagle6.gateway.service.dto.UserDTO;
 import com.eagle6.gateway.service.dto.PasswordChangeDTO;
 import com.eagle6.gateway.web.rest.errors.ExceptionTranslator;
 import com.eagle6.gateway.web.rest.vm.KeyAndPasswordVM;
 import com.eagle6.gateway.web.rest.vm.ManagedUserVM;
-import com.eagle6.gateway.service.UserService;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import org.junit.Before;

@@ -1,7 +1,6 @@
 package com.eagle6.gateway.web.rest;
 
 import com.eagle6.gateway.GatewayApp;
-import com.eagle6.gateway.domain.User;
 import com.eagle6.gateway.repository.UserRepository;
 import com.eagle6.gateway.security.jwt.TokenProvider;
 import com.eagle6.gateway.web.rest.vm.LoginVM;

@@ -1,8 +1,8 @@
 package com.eagle6.gateway.service.mapper;
 
 import com.eagle6.gateway.domain.User;
-import com.eagle6.gateway.service.dto.UserDTO;
 
+import com.eagle6.gateway.service.dto.UserDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -33,7 +33,7 @@ public class UserMapper {
             return null;
         } else {
             User user = new User();
-            user.setId(userDTO.getId());
+            user.setId(String.valueOf(userDTO.getId()));
             user.setLogin(userDTO.getLogin());
             user.setFirstName(userDTO.getFirstName());
             user.setLastName(userDTO.getLastName());
@@ -57,7 +57,7 @@ public class UserMapper {
             return null;
         }
         User user = new User();
-        user.setId(id);
+        user.setId(String.valueOf(id));
         return user;
     }
 }

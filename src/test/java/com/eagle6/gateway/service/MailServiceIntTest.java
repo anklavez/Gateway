@@ -2,7 +2,6 @@ package com.eagle6.gateway.service;
 import com.eagle6.gateway.config.Constants;
 
 import com.eagle6.gateway.GatewayApp;
-import com.eagle6.gateway.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.Before;
 import org.junit.Test;

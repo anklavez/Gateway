@@ -1,6 +1,7 @@
 package com.eagle6.gateway.web.rest.vm;
 
 import com.eagle6.gateway.service.dto.UserDTO;
+
 import javax.validation.constraints.Size;
 
 /**
